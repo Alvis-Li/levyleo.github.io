@@ -1,1 +1,116 @@
-theme: jekyll-theme-midnight
+# Where things are
+source: .
+destination: ./_site
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data_dir: ./_data
+includes_dir: ./_includes
+collections: null
+
+# Handling Reading
+safe: false
+include: [".htaccess"]
+exclude: []
+keep_files: [".git", ".svn"]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future: true
+unpublished: false
+
+# Plugins
+whitelist: []
+gems: ["jekyll-paginate"]
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+detach: false
+port: 4000
+host: 127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink: date
+paginate: 8
+paginate_path: /page:num
+timezone: Asia/Shanghai
+
+quiet: false
+defaults: []
+
+# Markdown Processors
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter_opts:
+    disable : true
+  # enable_coderay: true
+
+  # coderay:
+  #   coderay_wrap: div
+  #   coderay_line_numbers: inline
+  #   coderay_line_number_start: 1
+  #   coderay_tab_width: 4
+  #   coderay_bold_every: 10
+  #   coderay_css: style
+
+#iLotus configs
+iLotus:
+  columns: 1
+  begin: 2014
+
+#站点基础配置
+title: levy's blog
+subTitle: 😁.
+description: 😂。
+url: http://localhost:4000
+feed: /feed.xml
+
+#菜单配置
+nav:
+  - text: 首页
+    url: /index.html
+    icon: icon-home
+    class: home
+  - text: 文章归档
+    url: /archives.html
+    icon: icon-reorder
+    class: none
+  - text: 关于我
+    url: /contact.html
+    icon: icon-envelope-alt
+    class: none
+  - text: RSS
+    url: /feed.xml
+    icon: icon-heart
+    class: none
+  - text: 博客源代码
+    url: https://github.com/levyleo
+    icon: icon-github
+    class: none
+
+page:
+  - text: 文章分类
+    url: /archives.html
+    last: true
+  # - text: 友情链接
+  #   url: /links.html
+  #   last: true
+  - text: 关于我
+    url: /contact.html
+    last: false
+
+author:
+  name: levy
