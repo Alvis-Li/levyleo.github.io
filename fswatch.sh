@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ./_posts/
+cd /Users/simple/levyleo.github.io/_posts
 nohup fswatch -o *.md | xargs -n1 -I{} sh ../gitpush.sh >> /tmp/github.io.csv &
 
 #jobs 查看后台运行的任务
