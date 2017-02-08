@@ -24,7 +24,7 @@ keywords: PIZn, GitHub, Jekyll, Plugins, Works, Archives, Quotes, Violet, css, h
             <ul>
   {% endif %}
 
-                <li>{{ post.date | date: "%b %e" }} : <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                <li>{{ post.date | date: "%m-%e" }} : <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 
   {% if forloop.last %}
             </ul>
