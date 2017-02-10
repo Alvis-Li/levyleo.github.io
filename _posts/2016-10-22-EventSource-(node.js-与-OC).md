@@ -1,4 +1,5 @@
 ---
+layout: post
 title: EventSource (node.js 与 OC)
 ---
 

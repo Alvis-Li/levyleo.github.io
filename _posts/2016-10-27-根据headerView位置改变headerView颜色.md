@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 根据headerView位置改变headerView颜色(collectionView/tableview)
 ---
 

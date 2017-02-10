@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Error when running Swift3 in REPL
 ---
 
