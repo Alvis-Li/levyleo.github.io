@@ -8,5 +8,3 @@ collectionView/tableview reloadSections/reloaddata时去掉动画无效时可以
 ```
 [UIView performWithoutAnimation:^{    [_collectionView reloadSections:[NSIndexSet indexSetWithIndex:2]];    //刷新操作 }];
 ```
-
-
