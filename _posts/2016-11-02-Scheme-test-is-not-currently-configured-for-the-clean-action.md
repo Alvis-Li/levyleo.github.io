@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Scheme test is not currently configured for the clean action.
 ---
 

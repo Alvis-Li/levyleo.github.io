@@ -1,4 +1,5 @@
 ---
+layout: post
 title: collectionView/tableview刷新时关闭动画无效
 ---
 
