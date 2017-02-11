@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the behavior of the UICollectionViewFlowLayout is not defined because:
+title: the behavior of the UICollectionViewFlowLayout is not defined because
 ---
 
 **the behavior of the UICollectionViewFlowLayout is not defined because:**
