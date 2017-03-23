@@ -35,7 +35,7 @@ incremental: false
 # Serving
 detach: false
 port: 
-host: www.levyleo.cn
+host: https://www.levyleo.cn
 baseurl: "" # does not include hostname
 
 # Outputting
@@ -75,7 +75,7 @@ iLotus:
 title: levy's blog
 subTitle: <br>😂
 description: 用了两年的博客园,最近发现很多之前写的博客上的图片没有了,所以将博客迁移到这里来(部分已过时/图片缺失无法还原的博客没有迁移过来).原博客(http://www.cnblogs.com/levy/)后面不再用了.
-url: http://www.levyleo.cn
+url: https://www.levyleo.cn
 feed: /feed.xml
 
 #菜单配置
