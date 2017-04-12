@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Maximum call stack size exceeded' using async
+title: Maximum call stack size exceeded using async
 ---
 
 'Maximum call stack size exceeded' using async.eachLimit 
