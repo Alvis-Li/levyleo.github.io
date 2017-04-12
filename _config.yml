@@ -102,7 +102,7 @@ nav:
     class: none
 
 page:
-  - text: 文章分类
+  - text: 文章归档
     url: /archives.html
     last: true
   # - text: 友情链接
