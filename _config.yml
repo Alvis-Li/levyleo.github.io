@@ -34,7 +34,7 @@ incremental: false
 
 # Serving
 detach: false
-port: 
+port:
 host: //www.levyleo.cn
 baseurl: "" # does not include hostname
 
@@ -114,3 +114,22 @@ page:
 
 author:
   name: levy
+
+JB :
+  version : 0.3.0
+  BASE_PATH : false
+  ASSET_PATH : false
+
+  comments :
+    provider : custom
+    disqus :
+      short_name : jekyllbootstrap
+    livefyre :
+      site_id : 123
+    intensedebate :
+      account : 123abc
+    facebook :
+      appid : 123
+      num_posts: 5
+      width: 580
+      colorscheme: light
