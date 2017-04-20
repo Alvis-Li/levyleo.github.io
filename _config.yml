@@ -34,8 +34,8 @@ incremental: false
 
 # Serving
 detach: false
-port:
-host: //www.levyleo.cn
+port: 9999
+host: 127.0.0.1 # //www.levyleo.cn
 baseurl: "" # does not include hostname
 
 # Outputting
