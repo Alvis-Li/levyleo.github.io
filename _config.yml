@@ -115,10 +115,5 @@ page:
 author:
   name: levy
 
-JB :
-  version : 0.3.0
-  BASE_PATH : false
-  ASSET_PATH : false
-
-  comments :
-    provider : custom
+comments :
+  provider : uyan
