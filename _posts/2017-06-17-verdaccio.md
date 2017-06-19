@@ -38,3 +38,5 @@ listen: 0.0.0.0:3873
 创建npm包上传到自己的服务器中
 
 同[上传自己创建的npm包](http://www.levyleo.cn/2017/06/16/npm.html)中的用法，假如已经设置了`npm set registry http://localhost:3873/` 完全相同，即可将npm包上传到自己的服务器，如果需要在每个命令后面添加` '--registry http://127.0.0.1:3873'`
+
+使用pm2启用：`pm2 start verdaccio -i 1 --name 'verdaccio'` 这样就能后台运行
