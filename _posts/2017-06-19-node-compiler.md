@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 将Node.js项目编译成可以执行文件
+title: 将Node.js项目编译成可执行文件
 ---
 
 [**Node.js Compiler**](https://github.com/pmq20/node-compiler): 将Node.js应用程序编译成单个可执行文件。
