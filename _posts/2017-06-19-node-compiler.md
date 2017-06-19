@@ -1,5 +1,5 @@
 ---
-layout：post
+layout: post
 title: 将Node.js项目编译成可以执行文件
 ---
 
