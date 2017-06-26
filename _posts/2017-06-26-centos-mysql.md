@@ -60,6 +60,14 @@ var connection = mysql.createConnection({
 connection.query('select Password from user WHERE User = "root"', function (error, results, fields) {
   if (error) throw error;
   // connected!
-	console.log(results,fields);
+	console.log(results);
 });
+
+>>>
+[ RowDataPacket { Password: '*6BB4837EB74329105EE' },
+  RowDataPacket { Password: '' },
+  RowDataPacket { Password: '' },
+  RowDataPacket { Password: '' } ]
+  
 ```
+
