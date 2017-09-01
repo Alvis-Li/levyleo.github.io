@@ -35,7 +35,7 @@ keywords:
         <li>
             {% for page in site.page %}
             <a href="{{ page.url }}" rel="bookmark" title="{{page.text}}">{{ page.text }}</a>
-            {% if !page.last %}
+            {% if page.last == false %}
                 <span class="lotus-squ">|</span>
             {% endif %}
             {% endfor %}
