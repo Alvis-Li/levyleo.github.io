@@ -1,25 +1,1027 @@
----
-layout: default
-title: 个人简历
-description: 
-keywords: 
----
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
 
-<p class="lotus-breadcrub">
-    <a href="{{ site.url }}/index.html" rel="nofollow" rel="nofollow" title="首页">首页</a>
-    <span> &gt; </span>
-    {{ page.title }}
-</p>
-<h1 class="lotus-pagetit">个人简历</h1>
-<article id="about">
-    <body class="_toc-left"><link href="{{ site.url }}/static/github.css" id="_theme " rel="stylesheet" type="text/css"><div id="_html" class="markdown-body"><h1 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>联系方式</h1>
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>NodeJS-李前成</title></head><body><article class="markdown-body"><h1 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>联系方式</h1>
 <ul>
 <li>手机：131xxxxxxxx </li>
-<li>Email：levy@levyleo.cn </li>
-<li>QQ/微信号：11xxxxxxxxx</li>
+<li>Email：<a href="mailto:levy@levyleo.cn">levy@levyleo.cn</a> </li>
+<li>QQ/微信号：1125323098</li>
 </ul>
-<hr>
-<h1 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>个人信息</h1>
+<hr />
+<h1 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>个人信息</h1>
 <ul>
 <li>李前成/男/1990 </li>
 <li>本科/软件工程</li>
@@ -28,42 +1030,42 @@ keywords:
 <li>Github：<a href="https://github.com/levyleo">https://github.com/levyleo</a> </li>
 <li>期望职位：NodeJS开发工程师</li>
 </ul>
-<hr>
-<h1 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作经历</h1>
-<h2 id="-2015-7-2017-9-"><a class="anchor" name="-2015-7-2017-9-" href="#-2015-7-2017-9-"><span class="octicon octicon-link"></span></a>上海谋乐网络科技有限公司（2015年7月~2017年9月）</h2>
-<h3 id="-2016-3-2017-9-"><a class="anchor" name="-2016-3-2017-9-" href="#-2016-3-2017-9-"><span class="octicon octicon-link"></span></a>漏洞银行（2016年3月~2017年9月）</h3>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作内容：</h4>
+<hr />
+<h1 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作经历</h1>
+<h2 id="2015720179"><a name="user-content-2015720179" href="#2015720179" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>上海谋乐网络科技有限公司（2015年7月~2017年9月）</h2>
+<h3 id="2016320179"><a name="user-content-2016320179" href="#2016320179" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>漏洞银行（2016年3月~2017年9月）</h3>
+<h4 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作内容：</h4>
 <ul>
 <li>参与漏洞银行服务器端部分功能开发</li>
 <li>编写开发规范文档、开发流程文档、测试文档、接口文档、测试清单等</li>
 <li>需求分析，进度把控，进行代码优化，代码重构</li>
 <li>学习、研究自动化测试，自动化部署，代码优化等方面知识，提高自身能力</li>
 </ul>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作业绩：</h4>
+<h4 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作业绩：</h4>
 <ul>
 <li>项目模块：白帽名片，子域名扫描，MD5解密查询，网站目录扫描，泄露数据查询，内部OA系统等</li>
 <li>项目功能：直播间，行长圈，任务系统，漏洞审核，PVP赛事，PWN笔记，工单功能，工具百科等</li>
 </ul>
-<h5 id="-2017-7-2017-9-"><a class="anchor" name="-2017-7-2017-9-" href="#-2017-7-2017-9-"><span class="octicon octicon-link"></span></a>直播间（2017年7月~2017年9月）</h5>
+<h5 id="2017720179"><a name="user-content-2017720179" href="#2017720179" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>直播间（2017年7月~2017年9月）</h5>
 <ul>
 <li>为了能使白帽更好的观看大咖讲课，公司决定自己搭建直播间。因为之前并未接触过直播，需要一切从头开始，根据阿里云的技术文档，最终搭建起了直播Server，并实现了直播连麦功能。成为漏洞银行一大特色。</li>
 </ul>
-<h5 id="-2016-10-2016-11-"><a class="anchor" name="-2016-10-2016-11-" href="#-2016-10-2016-11-"><span class="octicon octicon-link"></span></a>网站目录扫描（2016年10月~2016年11月）</h5>
+<h5 id="201610201611"><a name="user-content-201610201611" href="#201610201611" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>网站目录扫描（2016年10月~2016年11月）</h5>
 <ul>
 <li>白帽进行渗透测试时很多时候需要获知一个网站的目录结构。参照Python目录扫描脚本，结合暴力扫描，完成NodeJS扫描脚本的编写。</li>
 </ul>
-<h5 id="-2016-8-2016-10-"><a class="anchor" name="-2016-8-2016-10-" href="#-2016-8-2016-10-"><span class="octicon octicon-link"></span></a>子域名扫描（2016年8月~2016年10月）</h5>
+<h5 id="20168201610"><a name="user-content-20168201610" href="#20168201610" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>子域名扫描（2016年8月~2016年10月）</h5>
 <ul>
 <li>为了便于白帽查看一个网站的所有子域名，项目中要求添加扫描网站子域名的功能，研究网上数十个现有的子域名扫描功能的网站以及Github公开的项目代码。实现了子域名扫描功能。成为Bugbank官网行长搜索五大主要功能之一。MD5解密也是行长搜索另一主要功能。</li>
 </ul>
-<h5 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>其他</h5>
+<h5 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>其他</h5>
 <ul>
 <li>研究Strider自动化部署，Verdaccio搭建私有NPM仓库，使用Gitlab搭建私有代码库，分布式搜索引擎ElasticSearch，xcode自动化测试等方面技术</li>
 <li>使用ESLint QA工具规范代码风格，Teambition协作团队进行项目管理，PM2管理Node应用进程，Redis日志型数据库</li>
 <li>log4js日志管理，lodash工具库，cheerio网页解析工具，mongoose数据库建模工具，joi验证数据模型工具，async异步处理模块</li>
 </ul>
-<h3 id="app-2015-7-2016-3-"><a class="anchor" name="app-2015-7-2016-3-" href="#app-2015-7-2016-3-"><span class="octicon octicon-link"></span></a>App开发（2015年7月~2016年3月）</h3>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作内容：</h4>
+<h3 id="app2015720163"><a name="user-content-app2015720163" href="#app2015720163" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>App开发（2015年7月~2016年3月）</h3>
+<h4 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作内容：</h4>
 <ul>
 <li>参与项目功能设计，需求分析，必要性分析，技术可行性分析</li>
 <li>制定开发需求，定义开发规范，提供开发思路</li>
@@ -71,27 +1073,27 @@ keywords:
 <li>确定APP整体样式，搭建应用的基本框架</li>
 <li>对现有代码进行优化，编写代码规范文档，创建、维护公司代码库</li>
 </ul>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作业绩：</h4>
+<h4 id="_8"><a name="user-content-_8" href="#_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作业绩：</h4>
 <ul>
 <li>App应用：一云，一云相机，一云名片，如戏，安全云卫士等</li>
 </ul>
-<h5 id="-2016-1-2016-3-"><a class="anchor" name="-2016-1-2016-3-" href="#-2016-1-2016-3-"><span class="octicon octicon-link"></span></a>如戏（2016年1月~2016年3月）</h5>
+<h5 id="2016120163"><a name="user-content-2016120163" href="#2016120163" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>如戏（2016年1月~2016年3月）</h5>
 <ul>
 <li>如戏属于影视资讯类APP，提供国内外影视信息、剧集情报、新剧上映信息等。用户可以制定自己的订阅，实时更新推送影视最新动态</li>
 <li>如戏支持用户添加、评价影视资讯，订阅资讯，影视上映提醒，剧集播出推送等功能</li>
 </ul>
-<h5 id="-2015-12-2016-1-"><a class="anchor" name="-2015-12-2016-1-" href="#-2015-12-2016-1-"><span class="octicon octicon-link"></span></a>一云名片（2015年12月~2016年1月）</h5>
+<h5 id="20151220161"><a name="user-content-20151220161" href="#20151220161" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>一云名片（2015年12月~2016年1月）</h5>
 <ul>
 <li>一云名片是网络大数据的产物，致力于创造一个查看、管理用户自己网络名片的应用</li>
 <li>一云名片从网络大数据中提取、整理暴露在网络中的用户自己的信息，从而生成属于用户自己的网络名片，从而让用户知道自己哪些信息被获取</li>
 </ul>
-<h5 id="-2015-7-2015-9-"><a class="anchor" name="-2015-7-2015-9-" href="#-2015-7-2015-9-"><span class="octicon octicon-link"></span></a>一云（2015年7月~2015年9月）</h5>
+<h5 id="2015720159"><a name="user-content-2015720159" href="#2015720159" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>一云（2015年7月~2015年9月）</h5>
 <ul>
 <li>一云是在随着“互联网+”快速发展，网络安全问题愈加突出的环境下诞生的一款安全APP</li>
 <li>一云从数据发送、接收到数据存储都是在加密的前提下进行，提高应用安全性</li>
 <li>一云致力于改善个人用户通讯的隐私安全，打造一个免费、简单、界面友好易用的安全通讯类APP，其前身安全云卫士，已有500多万用户使用。</li>
 </ul>
-<h5 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>其他</h5>
+<h5 id="_9"><a name="user-content-_9" href="#_9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>其他</h5>
 <ul>
 <li>结合MVC、MVVM等开发模式，选择适合项目实际状况的模式，降低代码耦合性，利用代码库提高开发效率</li>
 <li>通过JavaScriptCore进行web与JS交互，从而实现OC与JavaScript相互调用</li>
@@ -99,23 +1101,23 @@ keywords:
 <li>使用GPUImage美化图片，添加滤镜，WeChatSDK微信分享，自定义相机、图片美化、添加滤镜、颜值分值计算，第三方登录基本功能</li>
 <li>实现RSA、ASE加密数据，MD5加密校验，数据加密缓存，加密手势锁，个人二维码生成，二维码扫描等基本功能</li>
 </ul>
-<h2 id="-2015-1-2015-6-"><a class="anchor" name="-2015-1-2015-6-" href="#-2015-1-2015-6-"><span class="octicon octicon-link"></span></a>上海幕影信息科技有限公司 （ 2015年1月 ~ 2015年6月 ）</h2>
-<h3 id="app-2015-1-2015-6-"><a class="anchor" name="app-2015-1-2015-6-" href="#app-2015-1-2015-6-"><span class="octicon octicon-link"></span></a>App开发（2015年1月 ~ 2015年6月）</h3>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作内容：</h4>
+<h2 id="20151-20156"><a name="user-content-20151-20156" href="#20151-20156" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>上海幕影信息科技有限公司 （ 2015年1月 ~ 2015年6月 ）</h2>
+<h3 id="app20151-20156"><a name="user-content-app20151-20156" href="#app20151-20156" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>App开发（2015年1月 ~ 2015年6月）</h3>
+<h4 id="_10"><a name="user-content-_10" href="#_10" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作内容：</h4>
 <ul>
 <li>公司开发者账号，邓白氏码，开发证书等开发所需工作申请，管理</li>
 <li>参与项目功能设计，需求分析，必要性分析，技术可行性分析</li>
 <li>确定项目需求，拟定项目计划，搭建项目框架</li>
 <li>根据项目需求，分析项目可行性，研究相关技术难点</li>
 </ul>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作业绩：</h4>
-<h5 id="comuuu-2015-1-2015-6-"><a class="anchor" name="comuuu-2015-1-2015-6-" href="#comuuu-2015-1-2015-6-"><span class="octicon octicon-link"></span></a>Comuuu（2015年1月 ~ 2015年6月）</h5>
+<h4 id="_11"><a name="user-content-_11" href="#_11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作业绩：</h4>
+<h5 id="comuuu20151-20156"><a name="user-content-comuuu20151-20156" href="#comuuu20151-20156" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Comuuu（2015年1月 ~ 2015年6月）</h5>
 <ul>
 <li>comuuu是comme和music组合而成，可以看出这是一款有关音乐的APP，实现音乐分享、可以与人一起远程合奏的应用</li>
 <li>comuuu是建立在midi信号数据小，便于传输，同时乐器能够识别的前提下，是对远程合奏进行的尝试。数据量小的特性大大提高了数据同步率</li>
 <li>comuuu可通过蓝牙使得乐器发音，同时也能解析乐器发出的midi指令模拟乐器发音，在此基础上进一步实现远程合奏</li>
 </ul>
-<h5 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>其他</h5>
+<h5 id="_12"><a name="user-content-_12" href="#_12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>其他</h5>
 <ul>
 <li>研究mid文件格式、midi指令格式，解决mid文件播放、midi指令播放、midi指令传输、midi生成midi文件等技术难点，为项目可行性提供依据，并成为核心技术</li>
 <li>根据midi指令格式，结合蓝牙传输数据的功能，实现蓝牙传输midi指令，手机控制乐器的功能</li>
@@ -123,29 +1125,29 @@ keywords:
 <li>蓝牙相关功能，midi指令转换、传输、接收和播放以及mid文件生成、播放等重要功能实现</li>
 <li>Socket即时通讯，AFJSONRPC服务器数据操作、EGOCache数据缓存，Reachability网络状况监听等基础功能</li>
 </ul>
-<h2 id="-2014-7-2015-1-"><a class="anchor" name="-2014-7-2015-1-" href="#-2014-7-2015-1-"><span class="octicon octicon-link"></span></a>宁波艾易教育科技有限公司 （ 2014年7月 ~ 2015年1月 ）</h2>
-<h3 id="app-2014-7-2015-1-"><a class="anchor" name="app-2014-7-2015-1-" href="#app-2014-7-2015-1-"><span class="octicon octicon-link"></span></a>App开发（2014年7月 ~ 2015年1月）</h3>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作内容：</h4>
+<h2 id="20147-20151"><a name="user-content-20147-20151" href="#20147-20151" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>宁波艾易教育科技有限公司 （ 2014年7月 ~ 2015年1月 ）</h2>
+<h3 id="app20147-20151"><a name="user-content-app20147-20151" href="#app20147-20151" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>App开发（2014年7月 ~ 2015年1月）</h3>
+<h4 id="_13"><a name="user-content-_13" href="#_13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作内容：</h4>
 <ul>
-<li>熟悉实际项目开发流程，参与公司项目开发，开始接触Swift、Node.js</li>
+<li>熟悉实际项目开发流程，参与公司项目开发，学习Swift、Node.js</li>
 <li>研究iOS崩溃监测机制，根据常用的崩溃统计原理，实现内置崩溃统计</li>
 <li>学习即时通讯，地图定位，数据缓存，程序多语言化等知识完成项目任务</li>
 </ul>
-<h4 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>工作业绩：</h4>
-<h5 id="7-2015-1-2015-6-"><a class="anchor" name="7-2015-1-2015-6-" href="#7-2015-1-2015-6-"><span class="octicon octicon-link"></span></a>7思出国（2015年1月 ~ 2015年6月）</h5>
+<h4 id="_14"><a name="user-content-_14" href="#_14" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>工作业绩：</h4>
+<h5 id="720151-20156"><a name="user-content-720151-20156" href="#720151-20156" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>7思出国（2015年1月 ~ 2015年6月）</h5>
 <ul>
 <li>艾易教育是在国内很少有出国留学方面的教育机构的现状下诞生的，主打出国留学，致力于推动教育国际化及信息化。7思出国就是艾易教育推出的方便学生之间交流的一款APP</li>
 <li>7思出国基于GPS定位系统，找出国外合作学校附近的寄宿家庭，方便学生选择理想的游学城市、学校</li>
 <li>7思出国内有朋友圈和即时通讯功能，方便家人和朋友交流，向更多的人分享自己身边的风景</li>
 </ul>
-<h5 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>其他</h5>
+<h5 id="_15"><a name="user-content-_15" href="#_15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>其他</h5>
 <ul>
-<li>学习Node.js使用Socket.io与iOS App通讯流程，实现即时通讯功能</li>
+<li>学习Node.js，使用Socket.io与iOS App通讯流程，实现即时通讯功能</li>
 <li>使用UncaughtExceptionHandler进行崩溃异常处理，截取崩溃信号、获取崩溃信息，将崩溃时所出现的界面截图反馈给统计服务器，最后APP动画退出</li>
 <li>实现FMDB创建数据库，保存聊天记录，SDWebImage加载、缓存图片，UILocalNotification本地推送，自定义相机等功能</li>
 </ul>
-<hr>
-<h1 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>技能清单</h1>
+<hr />
+<h1 id="_16"><a name="user-content-_16" href="#_16" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>技能清单</h1>
 <ul>
 <li>后端开发：Node</li>
 <li>后端框架：Restify/Express</li>
@@ -154,7 +1156,7 @@ keywords:
 <li>版本管理、文档和自动化部署工具：SVN/Git/apidoc/Strider/Teambition</li>
 <li>开放平台：SAE/微博开放平台/微信应用开发/阿里云</li>
 </ul>
-<h2 id="-"><a class="anchor" name="-" href="#-"><span class="octicon octicon-link"></span></a>技能关键字</h2>
+<h2 id="_17"><a name="user-content-_17" href="#_17" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>技能关键字</h2>
 <ul>
 <li>nodejs</li>
 <li>mongodb</li>
@@ -165,7 +1167,4 @@ keywords:
 <li>restful</li>
 <li>socket</li>
 </ul>
-<hr>
-</div>
-</body>
-</article>
+<hr /></article></body></html>
