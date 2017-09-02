@@ -13,7 +13,6 @@
  - 工作年限：3年（NodeJs 1年半经验）
  - 技术博客：https://www.levyleo.cn
  - Github：https://github.com/levyleo 
- - 期望职位：NodeJS开发工程师
 
 ---
 
