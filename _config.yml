@@ -74,7 +74,7 @@ iLotus:
 #站点基础配置
 title: levy's blog
 subTitle: <br>😂
-description: 用了两年的博客园,最近发现很多之前写的博客上的图片没有了,所以将博客迁移到这里来(部分已过时/图片缺失无法还原的博客没有迁移过来).原博客(http://www.cnblogs.com/levy/)后面不再用了.
+description: 最近在找工作，会总结一些面试中被问到的<a href='/2017/09/07/%E9%9D%A2%E8%AF%95%E9%A2%98.html'>面试题</a>，<a href="/bio.html">个人简历</a>
 url: //www.levyleo.cn
 feed: /feed.xml
 
