@@ -74,7 +74,7 @@ iLotus:
 #站点基础配置
 title: levy's blog
 subTitle: <br>😂
-description: 最近在找工作，会总结一些面试中被问到的<a href='/2017/09/07/%E9%9D%A2%E8%AF%95%E9%A2%98.html'>面试题</a>，<a href="/bio.html">个人简历</a>
+description: 大牛推荐的学习方向：<p>1、多逛开源的技术网站（CSDN，Github）<br>2、学习数据结构、算法等<br>3、学习js的底层/核心</p><br><a href="/bio.html">个人简历</a>
 url: //www.levyleo.cn
 feed: /feed.xml
 
