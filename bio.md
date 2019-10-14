@@ -1,22 +1,40 @@
-# 联系方式
-
-- 手机：13162265506 
-- Email：levy@levyleo.cn 
-- QQ/微信号：1125323098
-
----
-
 # 个人信息
 
  - 李前成/男/1990 
  - 本科/软件工程
- - 工作年限：3年（NodeJs 1年半经验）
+ - 工作年限：6年
  - 技术博客：https://www.levyleo.cn
  - Github：https://github.com/levyleo 
 
 ---
 
+# 联系方式
+
+- 手机：13162265506 
+- Email：levy@levyleo.cn 
+
+---
+
 # 工作经历
+
+## 欧特克(上海)研发中心 (2017年9月~至今)
+
+### 服务器开发（NodeJS） (2017年9月~至今)
+
+#### 工作内容：
+
+ - 参与Command-Processor相关API开发
+ - 参与搭建API Load Test/API Integration Test测试项目
+ - 调整Jenkins、Docker，优化CI/CD流程
+ - Splunk Alert、NewRelic Dashboard
+
+#### 工作业绩：
+ 
+ - 参与GDPR，Transmittal，OFA，Shared Link等功能相关API开发
+ - 以K6为压测工具，搭建API Load Test测试，数据库以及Grafana Dashboards
+ - 参与优化Jasmine，提高Integration Test性能
+ - 调整Jenkinsfile、Dockerfile，缩短CI/CD执行时间
+ - 根据不同的API，添加对应的Splunk Dashboard、Splunk Alert、NewRelic Dashboard
 
 ## 上海谋乐网络科技有限公司（2015年7月~2017年9月）
 
