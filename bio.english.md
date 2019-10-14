@@ -51,7 +51,7 @@
 
 #### Work content：
 
-- Apply for company developer account, D&B code, development certificate, etc.
+- Apply for company developer account, Dun & Bradstreet number, development certificate, etc.
 - Participate in project function design, demand analysis, necessity analysis, technical feasibility analysis
 - Identify project needs, develop project plans, and build project frameworks
 - Analyze project feasibility and study related technical difficulties according to project needs
