@@ -57,3 +57,5 @@
 - Participate in project function design, demand analysis, necessity analysis, technical feasibility analysis
 - Identify project needs, develop project plans, and build project frameworks
 - Analyze project feasibility and study related technical difficulties according to project needs
+
+---
