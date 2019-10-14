@@ -30,11 +30,13 @@
 
 #### 工作业绩：
  
- - 参与GDPR，Transmittal，OFA，Shared Link等功能相关API开发
+ - 参与GDPR，Transmittal，OFA，Shared Link, PDF Viewing等功能相关API开发
  - 以K6为压测工具，搭建API Load Test测试，数据库以及Grafana Dashboards
  - 参与优化Jasmine，提高Integration Test性能
  - 调整Jenkinsfile、Dockerfile，缩短CI/CD执行时间
  - 根据不同的API，添加对应的Splunk Dashboard、Splunk Alert、NewRelic Dashboard
+ - 更新使用的packages, 使其保证版本最新，且没有安全漏洞
+ - 参与netsparker扫描和whitelist扫描工作
 
 ## 上海谋乐网络科技有限公司（2015年7月~2017年9月）
 

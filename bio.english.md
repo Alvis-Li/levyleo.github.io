@@ -29,11 +29,13 @@
 
 #### Work Details：
  
- - Participate GDPR, Transmittal, OFA, Shared Link and other API development
+ - Participate GDPR, Transmittal, OFA, Shared Link, PDF Viewing and other API development
  - Use K6 as the pressure measurement tool to build the API Load Test. Build the database and Grafana Dashboards
  - Participate in optimizing Jasmine to improve the performance of Integration Test
  - Adjust Jenkinsfile, Dockerfile. Reduce CI/CD execution time
  - Add the corresponding Splunk Dashboard, Splunk Alert, NewRelic Dashboard according to different APIs
+ - Update the used packages to keep the latest version and no security holes
+ - Participate in netsparker scanning and whitelist scanning
 
 ## Shanghai MouLe technology co. LTD（July 2015 ~ September 2017）
 
